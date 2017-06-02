@@ -1,2 +1,2 @@
-# Scripts
-This is just a collection of bash scripts.
+# BOILERPLATE README
+- add content here
