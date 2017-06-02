@@ -1,4 +1,5 @@
 #!/bin/bash
+
 mkdir project
 cd project
 touch index.html styles.css README.md
