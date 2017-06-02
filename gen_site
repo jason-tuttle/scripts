@@ -1,0 +1,19 @@
+#!/usr/bin/env sh
+
+echo "creating directory tree..."
+mkdir "$1"
+cd "$1"
+mkdir css images scripts
+echo "making boilerplate index.html, styles.css and README.md"
+cp /Users/jasontuttle/Developer/templates/index.html ./index.html
+cp /Users/jasontuttle/Developer/templates/README.md ./README.md
+cp /Users/jasontuttle/Developer/templates/styles.css css/styles.css
+echo "setting up git repo..."
+git init
+git add .
+git commit -m 'initial commit'
+echo "creating GitHub repo..."
+hub create -d "$1"
+echo "pushing to GitHub..."
+git push origin master
+echo "Done!"
